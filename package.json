@@ -1,0 +1,27 @@
+{
+  "name": "pruebas",
+  "version": "1.0.0",
+  "description": "Proyecto de pruebas continuas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aczuleta/CI-Pruebas.git"
+  },
+  "keywords": [
+    "Testing",
+    "CI/CD"
+  ],
+  "author": "ZAC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aczuleta/CI-Pruebas/issues"
+  },
+  "homepage": "https://github.com/aczuleta/CI-Pruebas#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "prettier": "^1.17.1"
+  }
+}
