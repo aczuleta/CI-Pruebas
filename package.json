@@ -7,7 +7,8 @@
     "restart": "nodemon index.js --exec babel-node --presets babel-preset-env",
     "start": "node index.js",
     "test": "babel-node --presets babel-preset-env run.js",
-    "cover": "nyc --reporter=lcov --reporter=text-summary npm test"
+    "cover": "nyc --reporter=lcov --reporter=text-lcov npm test",
+    "lint": "eslint --fix"
   },
   "husky": {
     "hooks": {
@@ -34,16 +35,17 @@
     "babel-loader": "^8.0.6",
     "babel-preset-env": "^1.7.0",
     "eslint": "^5.16.0",
+    "grunt": "^1.0.4",
+    "grunt-eslint": "^21.0.0",
+    "grunt-prettier": "^1.2.0",
+    "husky": "^2.3.0",
     "jasmine": "^3.4.0",
     "jasmine-reporters": "^2.3.2",
+    "load-grunt-tasks": "^4.0.0",
     "nodemon": "^1.19.0",
     "nyc": "^14.1.1",
     "prettier": "^1.17.1",
-    "load-grunt-tasks": "^4.0.0",
-    "grunt-prettier": "^1.2.0",
-    "husky": "^2.3.0",
-    "grunt-eslint": "^21.0.0",
-    "grunt": "^1.0.4"
+    "sonarqube-scanner": "^2.4.0"
   },
   "dependencies": {
     "express": "^4.17.0",

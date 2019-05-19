@@ -1,5 +1,6 @@
 "use strict";
-module.exports = grunt => {
+
+const grunt = (grunt) => {
   //hago npm tasts
   /* grunt.loadNpmTasks('grunt-prettify');
     grunt.loadNpmTasks('grunt-cssbeautifier');
@@ -22,13 +23,13 @@ module.exports = grunt => {
       options: {
         configFile: "./.eslintrc.json"
       },
-      target: ["./**.js"]
+      target: ["./services/**.js"]
     }
   });
 
   //registrando task
   grunt.registerTask("pre-commit", "Poniendo el código bonito", () => {
-    let tasks = [ "prettier", "eslint"];
+    let tasks = ["prettier", "eslint"];
     grunt.log.writeln("Beautifying...");
     tasks.forEach(task => {
       grunt.log.writeln("Step " + task);
@@ -37,3 +38,5 @@ module.exports = grunt => {
     });
   });
 };
+
+export {grunt};

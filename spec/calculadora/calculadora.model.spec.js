@@ -15,15 +15,15 @@ describe("Add functionality", () => {
     });
 
     it("calculates that x - y = z", () => {
-        expect(calculadora.restar(4, 4)).not.toEqual(0);
+        expect(calculadora.restar(4, 4)).toEqual(0);
     });
 
     it("calculates that x * y = z", () => {
-        expect(calculadora.multiplicar(4, 4)).not.toEqual(16);
+        expect(calculadora.multiplicar(4, 4)).toEqual(16);
     });
 
     it("calculates that x / y = z", () => {
-        expect(calculadora.multiplicar(4, 4)).not.toEqual(1);
+        expect(calculadora.dividir(4, 4)).toEqual(1);
     });
 
 
