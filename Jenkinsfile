@@ -18,7 +18,8 @@ pipeline {
             }
         }
         
-        stage("Push"){
+	    
+        stage("Push 2"){
             steps{
                 sh '''
                     docker login -u $DOCKER_USER -p $DOCKER_PASSWD
