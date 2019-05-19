@@ -4,7 +4,7 @@ pipeline {
         DOCKER_PASSWD = credentials('DOCKER_HUB_PASSWD')
         DOCKER_USER = credentials('DOCKER_HUB_USER')
     }
-    
+
     stages {
         stage('Build'){
             steps {
@@ -13,7 +13,7 @@ pipeline {
 			echo $GIT_URL
 			echo $PWD
 			cd app-node
-			docker build  -t aczuleta10/apinode . 
+			docker build  -t aczuleta10/test-ci . 
 		   '''
             }
         }

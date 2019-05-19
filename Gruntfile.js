@@ -1,6 +1,5 @@
 "use strict";
-
-const grunt = (grunt) => {
+module.exports = grunt => {
   //hago npm tasts
   /* grunt.loadNpmTasks('grunt-prettify');
     grunt.loadNpmTasks('grunt-cssbeautifier');
@@ -38,5 +37,3 @@ const grunt = (grunt) => {
     });
   });
 };
-
-export {grunt};
