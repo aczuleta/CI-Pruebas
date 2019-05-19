@@ -17,15 +17,7 @@ pipeline {
 		   '''
             }
         }
-
-        stage("Testing"){
-
-        }
-
-        stage("Static Analysis"){
-
-        }
-
+        
         stage("Push"){
             steps{
                 sh '''
@@ -33,10 +25,6 @@ pipeline {
                     docker push aczuleta10/apinode
                 '''
             }
-        }
-
-        stage("Desployment"){
-
         }
     }
 }
