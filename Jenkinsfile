@@ -6,7 +6,7 @@ pipeline {
     }
 
     stages {
-        stage('Build TEST 2'){
+        stage('Build TEST 3'){
             steps {
                 sh '''
  			echo "hellow 3rd  world!"
